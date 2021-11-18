@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app start -->
+    <dimen name="marginSize">16dp</dimen>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="contentSize">14sp</dimen>
+    <!-- app end -->
+
+    <dimen name="imgWH">64dp</dimen>
+</resources>
