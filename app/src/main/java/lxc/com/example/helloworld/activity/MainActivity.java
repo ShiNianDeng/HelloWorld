@@ -25,10 +25,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void initView() {
-        btnTimer = fd(R.id.btn_timer);
-        btnTimer.setOnClickListener(this);
-        btnTwo = fd(R.id.btn_two);
-        btnTwo.setOnClickListener(this);
+        fd(R.id.btn_timer).setOnClickListener(this);
+        fd(R.id.btn_two).setOnClickListener(this);
+        fd(R.id.btn_glide_transformations).setOnClickListener(this);
     }
 
 
@@ -44,6 +43,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.btn_two:
                 Log.e(TAG, "onClick: 跳转到RecyclerViewActivity" );
                 intent = new Intent(this, RecyclerViewDemoActivity.class);
+                break;
+            case R.id.btn_glide_transformations:
+                Log.e(TAG, "onClick: 跳转到Glide-TransformationsActivity" );
+                intent = new Intent(this, GlideTransformationsActivity.class);
                 break;
             default:
                 break;

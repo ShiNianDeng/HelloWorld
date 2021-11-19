@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GlideTransformationsActivity">
+
+    <ImageView
+        android:id="@+id/iv_transformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/demo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cropCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="裁剪图片" />
+
+            <Button
+                android:id="@+id/btn_cropCircle_with_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="裁剪有边框圆形" />
+
+            <Button
+                android:id="@+id/btn_crop_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正方形裁剪" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_rounded_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆角裁剪" />
+
+            <Button
+                android:id="@+id/btn_color_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色转换" />
+
+            <Button
+                android:id="@+id/btn_gray_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灰度级转换" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_blur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="模糊处理" />
+
+            <Button
+                android:id="@+id/btn_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="遮罩掩饰" />
+
+            <Button
+                android:id="@+id/btn_toon_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡通滤波器" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sepia_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乌墨色滤波器" />
+
+            <Button
+                android:id="@+id/btn_contrast_ffilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对比度滤波器" />
+
+            <Button
+                android:id="@+id/btn_invert_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反转滤波器" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pixelation_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="像素化滤波器" />
+
+            <Button
+                android:id="@+id/btn_sketch_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="素描滤波器" />
+
+            <Button
+                android:id="@+id/btn_swirl_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="旋转滤波器" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_brightness_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亮度滤波器" />
+
+            <Button
+                android:id="@+id/btn_kuwahara_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuwahara滤波器" />
+
+            <Button
+                android:id="@+id/btn_vignette_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="装饰图滤波器" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
