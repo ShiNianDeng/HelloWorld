@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:duration="4000"
     android:interpolator="@android:anim/accelerate_interpolator">
+<!--    animation.setFillAfter决定了动画在播放结束时是否保持最终的状态；-->
 <!--    设置不确定动画的加速曲线，默认为linear intnerpolator-->
 <!--    不确定动画：没有实现android.graphics.drawable.Animatable.的Drawable。-->
     <scale

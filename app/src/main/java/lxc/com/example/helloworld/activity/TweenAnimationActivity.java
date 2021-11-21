@@ -28,6 +28,7 @@ public class TweenAnimationActivity extends BaseActivity implements View.OnClick
         fd(R.id.btn_set_animation).setOnClickListener(this);
         fd(R.id.btn_scale_animation).setOnClickListener(this);
         ivCourier = fd(R.id.iv_img);
+
     }
 
     @Override
@@ -50,7 +51,22 @@ public class TweenAnimationActivity extends BaseActivity implements View.OnClick
                 break;
             default:
                 break;
-        }
+        }anim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
         ivCourier.startAnimation(anim);
     }
 }
