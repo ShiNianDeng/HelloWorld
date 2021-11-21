@@ -14,7 +14,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     public static final String TAG = "MainActivity";
 
-    private Button btnTimer,btnTwo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,6 +27,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         fd(R.id.btn_timer).setOnClickListener(this);
         fd(R.id.btn_two).setOnClickListener(this);
         fd(R.id.btn_glide_transformations).setOnClickListener(this);
+        fd(R.id.btn_animation).setOnClickListener(this);
     }
 
 
@@ -47,6 +47,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.btn_glide_transformations:
                 Log.e(TAG, "onClick: 跳转到Glide-TransformationsActivity" );
                 intent = new Intent(this, GlideTransformationsActivity.class);
+                break;
+            case R.id.btn_animation:
+                Log.e(TAG, "onClick: 跳转到AnimationActivity" );
+                intent = new Intent(this, AnimationActivity.class);
                 break;
             default:
                 break;

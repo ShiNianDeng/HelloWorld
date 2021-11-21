@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TweenAnimationActivity">
+
+    <Button
+        android:id="@+id/btn_alpha_animation"
+        style="@style/demoButton"
+        android:text="AlphaAnimation" />
+
+    <Button
+        android:id="@+id/btn_scale_animation"
+        style="@style/demoButton"
+        android:text="ScaleAnimation" />
+
+    <Button
+        android:id="@+id/btn_translate_animation"
+        style="@style/demoButton"
+        android:text="TranslateAnimation" />
+
+    <Button
+        android:id="@+id/btn_rotate_animation"
+        style="@style/demoButton"
+        android:text="RotateAnimation" />
+
+    <Button
+        android:id="@+id/btn_set_animation"
+        style="@style/demoButton"
+        android:text="SetAnimation" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/a_0"
+        android:contentDescription="快递员正在路上！"
+        android:layout_gravity="center"/>
+</LinearLayout>

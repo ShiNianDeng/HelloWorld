@@ -10,6 +10,7 @@
         android:id="@+id/iv_transformation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="这里需要设置一个图片描述"
         android:src="@drawable/demo" />
 
     <LinearLayout
@@ -106,7 +107,7 @@
                 android:text="乌墨色滤波器" />
 
             <Button
-                android:id="@+id/btn_contrast_ffilter"
+                android:id="@+id/btn_contrast_filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="对比度滤波器" />
@@ -118,6 +119,7 @@
                 android:text="反转滤波器" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,6 +145,7 @@
                 android:text="旋转滤波器" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

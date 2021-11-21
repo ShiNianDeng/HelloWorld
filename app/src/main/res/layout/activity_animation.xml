@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.TimerDemoActivity">
+    tools:context=".activity.AnimationActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/btn_frame_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="TimerDemo"
+        android:text="传统动画：帧动画"
         android:textSize="18sp" />
-
-
     <Button
-        android:id="@+id/start_timer"
+        android:id="@+id/btn_tweened_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="startTimer"
-        android:text="启动延时器" />
-
+        android:text="传统动画：补间动画"
+        android:textSize="18sp"/>
     <Button
-        android:id="@+id/stop_timer"
+        android:id="@+id/btn_property_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="stopTimer"
-        android:text="停止延时器" />
+        android:text="属性动画"
+        android:textSize="18sp"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

@@ -54,7 +54,7 @@ public class GlideTransformationsActivity extends BaseActivity implements View.O
         fd(R.id.btn_mask).setOnClickListener(this);
         fd(R.id.btn_toon_filter).setOnClickListener(this);
         fd(R.id.btn_sepia_filter).setOnClickListener(this);
-        fd(R.id.btn_contrast_ffilter).setOnClickListener(this);
+        fd(R.id.btn_contrast_filter).setOnClickListener(this);
         fd(R.id.btn_invert_filter).setOnClickListener(this);
         fd(R.id.btn_pixelation_filter).setOnClickListener(this);
         fd(R.id.btn_sketch_filter).setOnClickListener(this);
@@ -126,7 +126,7 @@ public class GlideTransformationsActivity extends BaseActivity implements View.O
                         .load(R.drawable.demo)
                         .transform(new SepiaFilterTransformation(20F))
                         .into(ivTransformation);
-            case R.id.btn_contrast_ffilter:
+            case R.id.btn_contrast_filter:
                 Glide.with(this)
                         .load(R.drawable.demo)
                         .transform(new ContrastFilterTransformation(6F))
