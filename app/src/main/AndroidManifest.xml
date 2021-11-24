@@ -3,15 +3,15 @@
     package="lxc.com.example.helloworld">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
         <activity
-            android:name=".activity.TweenAnimationActivity"
-            android:exported="true">
+            android:name=".activity.PropertyAnimationActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,20 +19,25 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.TweenAnimationActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".activity.FrameAnimationActivity"
             android:exported="true" />
         <activity
             android:name=".activity.AnimationActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.GlideTransformationsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.LinearActivity"
             android:exported="true" />
         <activity
             android:name=".activity.GridActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activity.StaggeredAcvitity"
             android:exported="true" />
@@ -47,9 +52,7 @@
             android:exported="true" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
     </application>
 
 </manifest>

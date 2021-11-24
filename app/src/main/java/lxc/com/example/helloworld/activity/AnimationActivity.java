@@ -25,19 +25,15 @@ public class AnimationActivity extends BaseActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent i = null;
-        switch (view.getId()) {
-            case R.id.btn_frame_animation:
-                Log.e(TAG, "onClick: 跳转到FrameAnimationActivity");
-                i = new Intent(this,FrameAnimationActivity.class);
-                break;
-            case R.id.btn_tweened_animation:
-                Log.e(TAG, "onClick: 跳转到TweenAnimationActivity");
-                i = new Intent(this,TweenAnimationActivity.class);
-                break;
-            case R.id.btn_property_animation:
-                break;
-            default:
-                break;
+        if(view.getId()==R.id.btn_frame_animation) {
+            Log.e(TAG, "onClick: 跳转到FrameAnimationActivity");
+            i = new Intent(this, FrameAnimationActivity.class);
+        }else if(view.getId()==R.id.btn_tweened_animation) {
+            Log.e(TAG, "onClick: 跳转到TweenAnimationActivity");
+            i = new Intent(this,TweenAnimationActivity.class);
+        }else if(view.getId()==R.id.btn_property_animation) {
+            Log.e(TAG, "onClick: 跳转到PropertyAnimationActivity");
+            i = new Intent(this,PropertyAnimationActivity.class);
         }
         startActivity(i);
     }
